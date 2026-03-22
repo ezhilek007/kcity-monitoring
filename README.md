@@ -15,31 +15,6 @@ Kibana (Log visualization)
 
 It enables real-time monitoring, log analysis, and alerting, ensuring high system reliability and faster issue resolution.
 
-🏗️ Architecture
-             +----------------------+
-             |   Linux Server       |
-             | (System + App Logs)  |
-             +----------+-----------+
-                        |
-        +---------------+----------------+
-        |                                |
-        v                                v
-+-------------------+          +-------------------+
-|  Node Exporter    |          |     Logstash      |
-| (System Metrics)  |          | (Log Processing)  |
-+--------+----------+          +--------+----------+
-         |                              |
-         v                              v
-+-------------------+          +-------------------+
-|   Prometheus      |          |  Elasticsearch    |
-| (Metrics Store)   |          | (Log Storage)     |
-+--------+----------+          +--------+----------+
-         |                              |
-         v                              v
-+-------------------+          +-------------------+
-|     Grafana       |          |      Kibana       |
-| (Dashboards)      |          | (Log Analysis)    |
-+-------------------+          +-------------------+
 📊 Features
 
 ✅ Real-time system monitoring (CPU, Memory, Disk, Network)
