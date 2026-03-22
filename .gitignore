@@ -1,0 +1,7 @@
+*.log
+*.pid
+*.key
+*.crt
+data/
+node_modules/
+.env
